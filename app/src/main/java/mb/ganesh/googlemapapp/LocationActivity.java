@@ -68,6 +68,7 @@ public class LocationActivity extends AppCompatActivity {
             textLoc.setText("Pick your location");
         }else {
             textLoc.setText(result);
+            //dsdsd
         }
     }
 
