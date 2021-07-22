@@ -35,15 +35,16 @@ public class LocationActivity extends AppCompatActivity {
 
         if (!isLocationPermissionGranted()) {
             requestLocationPermission();
-        }else {
-            pickLocBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(LocationActivity.this , MainActivity.class));
-                    finish();
-                }
-            });
         }
+
+        pickLocBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LocationActivity.this , MainActivity.class));
+                finish();
+            }
+        });
+
 
 
     }
